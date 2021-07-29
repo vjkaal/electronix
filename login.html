@@ -3,14 +3,21 @@
     <head>
         <meta charset="utf-8">
         <title></title>
+        <link rel="stylesheet" href="css/login.css">
     </head>
     <body>
         <form class="login" action="" method="post">
             <fieldset>
                 <legend>Login:</legend>
-                <input type="email" name="email" placeholder="Enter email: ">
-                <input type="password" name="pass" placeholder="Enter password: ">
-                <input type="submit" name="submit" value="Login">
+                <div class="inputContainer">
+                    <input type="email" id="email" name="email" placeholder="Enter email: ">
+                    <input type="password" id="pass" name="pass" placeholder="Enter password: ">
+                </div>
+                <br>
+                <div class="submitContainer">
+                    <input type="submit" id="submit" name="submit" value="Login">
+                </div>
+                <br>
             </fieldset>
         </form>
 
