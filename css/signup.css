@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+fieldset{
+    margin: 1em;
+}
+
+legend{
+    margin-left: 3em;
+    font-weight: bold;
+    text-shadow: 1px solid blue;
+}
+
+
+input{
+    margin: 1em 2em;
+    padding: 0px 1em;
+}
