@@ -6,6 +6,7 @@
     padding: 0px;
 }
 
+
 header{
     background: #138D75;
     display: flex;
@@ -28,10 +29,15 @@ header{
     text-shadow: 1px 1px black;
 }
 
+
 .navContainer{
     padding: 1em 2em;
     display: flex;
     align-items: center;
+}
+
+.navContainer button{
+    display: none;
 }
 
 .navContainer nav{
@@ -68,4 +74,34 @@ footer{
     text-align: center;
     position: static;
     bottom: 0;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .headingContainer{
+        width: 100%;
+    }
+    .headingContainer h1{
+        width: 80%;
+    }
+
+    .headingContainer p{
+        font-size: 1em;
+    }
+
+    .navContainer{}
+
+    .navContainer button{
+        display: inline;
+    }
+
+    .navContainer nav{
+        display: none;
+    }
 }

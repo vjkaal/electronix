@@ -1,7 +1,6 @@
 body{
     width: 100%;
     height: 100%;
-    background: gray;
 }
 
 form{
@@ -31,11 +30,16 @@ legend{
 }
 
 #email, #pass{
+    background: transparent;
     margin: .5em 0px;
     padding: .5em 1em;
-    border: 1px solid orange;
+    border: 1px solid green;
     border-radius: 1em;
     color: green;
+}
+
+#email:hover,#pass:hover{
+    background: tomato;
 }
 
 #email:active,#pass:active{

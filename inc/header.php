@@ -13,6 +13,7 @@
             </div>
 
             <div class="navContainer">
+                <button type="button" name="button" onclick="displayNav()"> <img src="./img/menuBar_black.svg" alt=""> </button>
                 <nav>
                     <a href="index.php" class="active">Home</a>
                     <a href="products.php">Products</a>
@@ -25,4 +26,15 @@
 
 
     </body>
+
+    <script type="text/javascript">
+        function displayNav(){
+            if(document.getElementsByTagName('nav')[0].style.display === 'none'){
+                 document.getElementsByTagName('nav')[0].style.display = 'block';
+            }
+            else document.getElementsByTagName('nav')[0].style.display = 'none';
+
+            console.log("called");
+        }
+    </script>
 </html>
