@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title></title>
-        <link rel="stylesheet" href="css/signup.css">
+        <link rel="stylesheet" href="css/master.css">
     </head>
     <body>
         <form class="" action="" method="post">
@@ -21,7 +21,7 @@
                 <br>
                 <input type="password" name="pass" placeholder="Enter a password: ">
                 <br>
-                <input type="password" name="pass" placeholder="Re-enter password: ">
+                <input type="password" name="pass" value="Re-enter password: ">
                 <br>
                 <input type="submit" name="submit" value="Sign Up">
             </fieldset>

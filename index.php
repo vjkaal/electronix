@@ -2,31 +2,19 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>ELECTRONIX</title>
         <link rel="stylesheet" href="css/master.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 
     </head>
     <body>
-        <header>
-            <div class="headingContainer">
-                <h1>ELECTRONIX</h1>
-                <p><u>your one stop for electronic items</u></p>
-            </div>
 
-            <div class="navContainer">
-                <nav>
-                    <a href="index.html" class="active">Home</a>
-                    <a href="products.html">Products</a>
-                    <a href="login.html">Login</a>
-                    <a href="about.html">About us</a>
-                </nav>
-            </div>
-        </header>
+        <!-- header file -->
+        <?php include 'inc/header.php'; ?>
+
+
         <br>
         <div class="products">
             <div class="slideshow">
@@ -65,9 +53,13 @@
             </table> -->
         </div>
         <br>
-        <footer>
-            <span>&copy; Copyright Electronix.com</span>
-        </footer>
+
+
+
+        <!-- footer file -->
+        <?php include'inc/footer.php'; ?>
+
+
     </body>
     <script src="js/slideshow.js" charset="utf-8"></script>
 </html>

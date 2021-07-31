@@ -2,13 +2,19 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>LOGIN</title>
         <link rel="stylesheet" href="css/login.css">
     </head>
     <body>
+
+        <!-- header file -->
+        <?php include 'inc/header.php'; ?>
+
+
         <form class="login" action="" method="post">
             <fieldset>
-                <legend>Login:</legend>
+                
+                <!-- <legend>Login:</legend> -->
                 <div class="inputContainer">
                     <input type="email" id="email" name="email" placeholder="Enter email: ">
                     <input type="password" id="pass" name="pass" placeholder="Enter password: ">
@@ -24,5 +30,12 @@
         <div class="signup">
             New Customer?<a href="signup.html">Sign UP</a>
         </div>
+
+
+
+        <!-- footer file -->
+        <?php include 'inc/footer.php'; ?>
+
+
     </body>
 </html>

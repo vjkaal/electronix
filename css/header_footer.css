@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background: #138D75;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headingContainer{
+    padding: 1em 2em;
+    color: white;
+}
+
+.headingContainer h1{
+    font-size: 3em;
+    text-shadow: 2px 2px black;
+}
+
+.headingContainer p{
+    font-family: 'Ubuntu mono',monospace;
+    font-size: 1.35em;
+    text-shadow: 1px 1px black;
+}
+
+.navContainer{
+    padding: 1em 2em;
+    display: flex;
+    align-items: center;
+}
+
+.navContainer nav{
+    height: 100%;
+    /* background: grey; */
+
+    display: flex;
+    align-items: center;
+}
+
+.navContainer nav a{
+    height: 100%;
+    width: 6em;
+    text-decoration: none;
+    color: silver;
+    font-family: 'Source code pro',sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 1em;
+}
+
+.navContainer nav a:hover, .navContainer nav .active{
+    font-weight: bolder;
+    color: white;
+}
+
+
+
+footer{
+    background: black;
+    padding: 1em;
+    color: white;
+    text-align: center;
+    position: static;
+    bottom: 0;
+}

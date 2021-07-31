@@ -1,0 +1,12 @@
+#items{
+    background: grey;
+    display: flex;
+    flexflow: column nowrap;
+    align-items: center;
+    /* justify-content: ; */
+}
+
+
+#nothingInCart{
+    width: 50%;
+}
