@@ -46,10 +46,13 @@ legend{
     transition: 1s ease;
     width: 50vw;
     border: 2px solid #138d75;
+    color: #138d75;
 }
 
 #email:focus,#pass:focus{
     outline: none;
+    background: #138d75;
+    color: white;
 }
 
 .submitContainer{
