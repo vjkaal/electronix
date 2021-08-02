@@ -9,7 +9,7 @@ function documentDesign() {
 
 
 function start() {
-    console.log("yes here!")
+    // console.log("yes here!")
     document.querySelector('#img1').style.display = 'inline';
     document.querySelector('#img1').style.width = '90%';
     document.querySelector('#img2').style.display = 'none';
@@ -24,7 +24,7 @@ function start() {
 
 document.querySelector('#prev').onclick = function prev() {
     setButtons();
-    console.log("left");
+    // console.log("left");
     let n = getCurrent();
     if (n > 0) {
         n--;
@@ -35,7 +35,7 @@ document.querySelector('#prev').onclick = function prev() {
 
 document.querySelector('#next').onclick = function next() {
     setButtons();
-    console.log("right");
+    // console.log("right");
     let n = getCurrent();
     let len = imgArr.length;
     if (n < len - 1) {
@@ -55,7 +55,7 @@ function getCurrent() {
 }
 
 function slideShow(n) {
-    console.log('Entered ' + n);
+    // console.log('Entered ' + n);
     let current = n;
     for (let i = 0; i < imgArr.length; i++) {
         if (i === current) {
@@ -73,7 +73,7 @@ function display(image) {
 }
 
 function hoverable(n,len) {
-    console.log(n+" "+len);
+    // console.log(n+" "+len);
     let btn1 = document.querySelector('#prev');
     let orgclr1 = btn1.style.color;
     let orgbg1 = btn1.style.backgroundColor;
@@ -127,9 +127,9 @@ function hoverable(n,len) {
             btn2.style.cursor = pt2;
         })
     }
-    console.log('this');
-    console.log(btn1.style.backgroundColor);
-    console.log(btn2.style.backgroundColor);
+    // console.log('this');
+    // console.log(btn1.style.backgroundColor);
+    // console.log(btn2.style.backgroundColor);
 }
 
 function setButtons(bg1,c1,bg2,c2){
@@ -141,9 +141,9 @@ function setButtons(bg1,c1,bg2,c2){
     btn2.style.backgroundColor = 'white';
     btn2.style.color = 'black';
     btn2.style.border = 'solid black 2px';
-    console.log('that');
-    console.log(btn1.style.backgroundColor);
-    console.log(btn2.style.backgroundColor);
+    // console.log('that');
+    // console.log(btn1.style.backgroundColor);
+    // console.log(btn2.style.backgroundColor);
 }
 
 // function setImages(){

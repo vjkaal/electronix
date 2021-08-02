@@ -7,23 +7,54 @@
     </head>
     <body>
         <form class="" action="" method="post">
+
+            <?php
+
+                if($_POST["given"] == 1)
+                {
+                    echo '<p style="background: lightgreen; color: white;"> Success! your email ';
+                    echo $_POST["email"];
+                    echo ' has been registered with us.<br> Please continue shopping with us!!!</p>';
+                }
+
+             ?>
+
+
             <fieldset>
                 <legend>Sign up:</legend>
+                <div class="inputContainer">
+                    <div class="fNameContainer">
+                        <input type="text" name="fName" placeholder="Enter first name: ">
+                    </div>
+                    <div class="lNameContainer">
+                        <input type="text" name="lName" placeholder="Enter last name: ">
+                    </div>
+                    <br>
+                    <div class="sexInputContainer">
+                        Sex:
+                        <input type="radio" name="sex" value="male">Male
+                        <input type="radio" name="sex" value="female">Female
+                    </div>
+
+                    <!-- con: contact -->
+                    <div class="conContainer">
+                        <input type="number" name="conNum" placeholder="Enter mobile number: ">
+                        <input type="email" name="email" placeholder="Enter email: ">
+                    </div>
+                </div>
+
                 <br>
-                <input type="text" name="fName" placeholder="Enter first name: ">
-                <input type="text" name="lName" placeholder="Enter last name: ">
+                <div class="passContainer">
+                    <input type="password" name="pass" placeholder="Enter a password: ">
+                    <br>
+                    <input type="password" name="pass" value="Re-enter password: ">
+                </div>
                 <br>
-                <input type="radio" name="sex" value="male">Male
-                <input type="radio" name="sex" value="female">Female
                 <br>
-                <input type="number" name="conNum" placeholder="Enter mobile number: ">
-                <input type="email" name="email" placeholder="Enter email: ">
-                <br>
-                <input type="password" name="pass" placeholder="Enter a password: ">
-                <br>
-                <input type="password" name="pass" value="Re-enter password: ">
-                <br>
-                <input type="submit" name="submit" value="Sign Up">
+                <div class="submitContainer">
+                    <input type="hidden" name="given" value="1">
+                    <input type="submit" name="submit" value="Sign Up">
+                </div>
             </fieldset>
         </form>
     </body>

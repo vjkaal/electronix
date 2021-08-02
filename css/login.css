@@ -1,3 +1,7 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
 body{
     width: 100%;
     height: 100%;
@@ -10,44 +14,47 @@ form{
 fieldset{
     padding: 1em;
     border: 0px;
-    /* border-radius: 1em; */
     display: flex;
     flex-flow: column;
     align-items: center;
 }
 
-
 legend{
-    margin: 1em;
+    margin: auto 1em;
 }
 
-.inputContainer, .submitContainer{
-    padding: 0px 1em;
+.emailContainer, .passContainer, .submitContainer{
+    /* background: grey; */
     width: 50vw;
     display: flex;
     flex-flow: column;
-    align-items: space-around;
+    align-items: center;
 }
 
 #email, #pass{
+    text-align: center;
+    width: 30vw;
+    font-weight: bold;
     background: transparent;
     margin: .5em 0px;
     padding: .5em 1em;
-    border: 1px solid green;
+    border: 1px solid #138d75;
     border-radius: 1em;
-    color: green;
 }
 
 #email:hover,#pass:hover{
-    background: tomato;
+    transition: 1s ease;
+    width: 50vw;
+    border: 2px solid #138d75;
 }
 
-#email:active,#pass:active{
-    border: 2px solid orange;
+#email:focus,#pass:focus{
+    outline: none;
 }
 
 .submitContainer{
     align-items: center;
+    margin-top: 2em;
 }
 
 #submit{
@@ -61,4 +68,13 @@ legend{
 
 #submit:hover{
     background: blueviolet;
+}
+
+#backToHomePage{
+    padding: .3em;
+}
+
+
+.signupContainer{
+    text-align: center;
 }

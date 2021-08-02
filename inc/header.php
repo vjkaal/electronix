@@ -15,7 +15,7 @@
             <div class="navContainer">
                 <button type="button" name="button" onclick="displayNav()"> <img src="./img/menuBar_black.svg" alt=""> </button>
                 <nav>
-                    <a href="index.php" class="active">Home</a>
+                    <a href="index.php">Home</a>
                     <a href="products.php">Products</a>
                     <a href="login.php" id="navDis1">Login</a>
                     <a href="your_cart.php" id="navDis2"> <img src="img/cart_white.svg" alt=""> </a>
