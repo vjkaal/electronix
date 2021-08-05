@@ -7,34 +7,36 @@
     </head>
     <body>
         <header>
-            <div class="headingContainer">
-                <h1>ELECTRONIX</h1>
-                <p><u>your one stop for electronic items</u></p>
+            <div>
+                <div>
+                    <img src="./img/logo_dark.svg" alt="logo">
+                </div>
+
+                <div>
+                    <h1>ELECTRONIX</h1>
+                    <p><u>your one stop for electricals</u></p>
+                </div>
             </div>
 
-            <div class="navContainer">
-                <button type="button" name="button" onclick="displayNav()"> <img src="./img/menuBar_black.svg" alt=""> </button>
-                <nav>
-                    <a href="index.php">Home</a>
-                    <a href="products.php">Products</a>
-                    <a href="login.php" id="navDis1">Login</a>
-                    <a href="your_cart.php" id="navDis2"> <img src="img/cart_white.svg" alt=""> </a>
-                    <a href="about.php">About us</a>
-                </nav>
-            </div>
+            
+            <nav>
+                <a href="index.php">Home</a>
+                <a href="products.php">Products</a>
+                <a href="login.php">Login</a>
+                <a href="your_cart.php" id="navDiff"> <img src="img/cart_black.svg" id="cartImg" alt=""> </a>
+                <a href="about.php">About us</a>
+            </nav>
         </header>
 
 
     </body>
 
-    <script type="text/javascript">
-        function displayNav(){
-            if(document.getElementsByTagName('nav')[0].style.display === 'none'){
-                 document.getElementsByTagName('nav')[0].style.display = 'block';
-            }
-            else document.getElementsByTagName('nav')[0].style.display = 'none';
+    <script>
 
-            console.log("called");
-        }
+        document.getElementById("navDiff").addEventListener("mouseover", function(){
+            console.log('hovered');
+            document.getElementById("navDiff").src = "img/cart_white.svg";
+        });
+
     </script>
 </html>

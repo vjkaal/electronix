@@ -6,9 +6,10 @@
         <link rel="stylesheet" href="css/login.css">
 
         <script>
-            function hideForm() {
+            function hideAll() {
                 document.addEventListener("DOMContentLoaded", function(){
                     document.getElementById("loginForm").style.display="none";
+                    document.getElementById("signupContainer").style.display="none";
                 });
             }
         </script>
@@ -37,7 +38,9 @@
 
             if(strlen($_POST["email"]) == 0 && strlen($_POST["pass"]) == 0)
             {
-                echo '<p style="background: red; color: white; text-align: center;">Please enter Correct input</p>';
+                echo '<p ';
+                echo 'style="background: red; color: white; text-align: center; padding: .5rem 0px;"';
+                echo '>Please enter Correct input</p>';
                 $inputYes = 0;
             }
             else $inputYes = 1;
@@ -47,10 +50,12 @@
                 if(chkPass($_POST["email"],$_POST["pass"]) == 1)
                 {
                     echo '<script>';
-                    echo 'hideForm();';
+                    echo 'hideAll();';
                     echo '</script>';
                     echo '<form action="index.php" method="post">';
-                    echo '<center><input type="submit" id="backToHomePage" name="submit" value="Back to Home Page"></center>';
+                    echo '<center><input type="submit" ';
+                    echo 'style="border: 0px; border-radius: .5rem; padding: 1rem;margin: 2rem; font-weight: 600; background: #fbfaf7; box-shadow: 0px 0px 1rem #2b2d42;"';
+                    echo 'name="submit" value="Back to Home Page"></center>';
                     echo '</form>';
                 }
 
@@ -67,35 +72,34 @@
 
                     <div class="emailContainer">
                         <!-- <legend>Email:</legend> -->
-                        <input type="email" id="email" name="email" placeholder="Enter email: ">
+                        <center><input type="email" id="email" name="email" placeholder="Enter email: "></center>
                     </div>
                     <br>
                     <div class="passContainer">
                         <!-- <legend>Password:</legend> -->
-                        <input type="password" id="pass" name="pass" placeholder="Enter password: ">
+                        <center><input type="password" id="pass" name="pass" placeholder="Enter password: "></center>
                     </div>
 
                 </div>
                 <br>
                 <div class="submitContainer">
                     <input type="hidden" name="given" value="1">
-                    <input type="submit" id="submit" name="submit" value="Login">
+                    <center><input type="submit" id="submit" name="submit" value="Login"></center>
                 </div>
                 <br>
-
-                <div class="signupContainer">
-                    New Customer?<a href="signup.php">Sign UP</a>
-                </div>
 
             </fieldset>
 
         </form>
 
 
+        <div class="signupContainer">
+            New Customer? &nbsp;&nbsp; <a href="signup.php"> <u>Create an Account</u> </a>
+        </div>
 
 
         <!-- footer file -->
-        <?php include 'inc/footer.php'; ?>
+        <!-- <?php include 'inc/footer.php'; ?> -->
 
 
     </body>

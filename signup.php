@@ -3,25 +3,28 @@
     <head>
         <meta charset="utf-8">
         <title></title>
-        <link rel="stylesheet" href="css/master.css">
+        <link rel="stylesheet" href="css/signup.css">
     </head>
     <body>
+        
+        <?php
+
+            if($_POST["given"] == 1)
+            {
+                echo '<p style="background: lightgreen; color: white;"> Success! your email ';
+                echo $_POST["email"];
+                echo ' has been registered with us.<br> Please continue shopping with us!!!</p>';
+            }
+        ?>
+
+
+        <!-- header file here -->
+
+        <?php include'inc/header.php'; ?>
+
+
         <form class="" action="" method="post">
-
-            <?php
-
-                if($_POST["given"] == 1)
-                {
-                    echo '<p style="background: lightgreen; color: white;"> Success! your email ';
-                    echo $_POST["email"];
-                    echo ' has been registered with us.<br> Please continue shopping with us!!!</p>';
-                }
-
-             ?>
-
-
             <fieldset>
-                <legend>Sign up:</legend>
                 <div class="inputContainer">
                     <div class="fNameContainer">
                         <input type="text" name="fName" placeholder="Enter first name: ">
@@ -47,7 +50,7 @@
                 <div class="passContainer">
                     <input type="password" name="pass" placeholder="Enter a password: ">
                     <br>
-                    <input type="password" name="pass" value="Re-enter password: ">
+                    <input type="password" name="pass" placeholder="Re-enter password: ">
                 </div>
                 <br>
                 <br>
@@ -57,5 +60,6 @@
                 </div>
             </fieldset>
         </form>
+
     </body>
 </html>
