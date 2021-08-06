@@ -70,7 +70,7 @@
                 </div>
                 
                 <div>
-                    <img class="sImg" src="img/tv.jpg" alt="">
+                    <img class="sImg" src="img/refrigerator.jpeg" alt="">
                 </div>
             
             </section>
@@ -79,7 +79,7 @@
             <section>
                 
                 <div>
-                    <img class="sImg" src="img/tv.jpg" alt="">
+                    <img class="sImg" src="img/air-cooler.jpeg" alt="">
                 </div>
                 
                 <div class="content">
@@ -99,7 +99,7 @@
                 </div>
 
                 <div>
-                    <img class="sImg" src="img/tv.jpg" alt="">
+                    <img class="sImg" src="img/ac3.jpg" alt="">
                 </div>
 
             </section>
@@ -109,7 +109,7 @@
             <section>
 
                 <div>
-                    <img class="sImg" src="img/tv.jpg" alt="">
+                    <img class="sImg" src="img/washing-machine.jpg" alt="">
                 </div>
                 
                 <div class="content">
@@ -128,7 +128,7 @@
                 </div>
 
                 <div>
-                    <img class="sImg" src="img/tv.jpg" alt="">
+                    <img class="sImg" src="img/mobile.jpg" alt="">
                 </div>
 
             </section>
@@ -138,7 +138,7 @@
             <section>
                 
                 <div>
-                    <img class="sImg" src="img/tv.jpg" alt="">
+                    <img class="sImg" src="img/oven.jpg" alt="">
                 </div>
 
                 <div class="content">
@@ -158,20 +158,7 @@
                 </div>
 
                 <div>
-                    <img class="sImg" src="img/tv.jpg" alt="">
-                </div>
-
-            </section>
-
-
-            <section>
-                <div>
-                    <img class="sImg" src="img/tv.jpg" alt="">
-                </div>
-
-                <div class="content">
-                    <h2>See Big Think Big</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deserunt, iusto eaque atque maiores nobis porro debitis, optio dolores ea voluptatum nemo consectetur dolorem similique.</p>
+                    <img class="sImg" src="img/speaker2.jpg" alt="">
                 </div>
 
             </section>

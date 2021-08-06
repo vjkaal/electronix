@@ -46,6 +46,7 @@ section:not(#main):nth-of-type(odd){
 
 .sImg{
     width: 30rem;
+    height: 20rem;
     margin: 1rem;
 }
 
