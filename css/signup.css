@@ -8,15 +8,21 @@
     --color-secondary: #68ca87;
     --color-accent: #655eb0;
     --background-light: #fbfaf7;
-    --background-dark: #2b2d42;
+    --background-dark: #282d42;
+
+
+    --small-font-size: .75rem;
 }
 
 /* code here */
 
-*{
+*, ::before, ::after{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
+
+
 body{
     width: 100%;
     height: 100%;
@@ -27,7 +33,7 @@ form{
     padding: 1em;
 }
 
-fieldset{
+fieldset#main{
     margin: 1rem 20rem;
     padding: 1em;
     height: 70vh;
@@ -38,82 +44,129 @@ fieldset{
     align-items: center;
     justify-content: space-around;
     
-    
     border: 0px;
     border-radius: 2rem;
-    box-shadow: 0px 0px 2rem grey;
+    box-shadow: 0px 0px 2rem rgba(92,99,105,.4);
 }
 
-fieldset > *{
-}
-
-/* .emailContainer, .passContainer, .submitContainer{
-    width: 50vw;
-}
-
-#email, #pass{
-    text-align: center;
+fieldset:not(#main){
+    position: relative;
+    margin-bottom: 1rem;
     width: 30vw;
-
-    font-size:medium;
-    font-family: 'Nunito',sans-serif;
-    font-weight: bold;
-    background: transparent;
-    color: var(--background-dark);
-
-    margin: .5em 0px;
-    padding: .5em 1em;
-
-    border: .2rem solid var(--color-secondary);
-    border-radius: 1em;
-    box-shadow: 0px 0px .5rem var(--color-secondary);
-}
-
-#email:hover,#pass:hover{
-    transition: 1s ease;
-    width: 40vw;
-    color: var(--color-accent);
-    box-shadow: 0px 0px .8rem var(--color-secondary);
-}
-
-#email:focus,#pass:focus{
-    outline: none;
-    background: var(--color-secondary);
-    color: white;
-    box-shadow: 0px 0px 1rem var(--color-secondary);
-}
-
-.submitContainer{
-    margin-top: 2em;
-}
-
-#submit{
-    background: blue;
-    color: white;
-    padding: .5em;
+    border-radius: .4rem;
     border: 0px;
-    border-radius: 1em;
-    width: 10em;
-}
-
-#submit:hover{
-    transition: 1s ease;
-    box-shadow: 0px 0px 1rem blue;
-}
-
-#backToHomePage{
-    padding: .3em;
 }
 
 
-.signupContainer{
-    text-align: center;
-    color: var(--color-accent);
+.form_input{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: .1rem .4rem;
+
+    border: 1px solid var(--background-dark);
+    border-radius: .4rem;
+
+    z-index: 1;
+    font-size: 1.1rem;
+    color: var(--color-secondary);
+    background-color: var(--background-light);
 }
 
-.signupContainer > a:hover{
-    background-color: transparent;
-    font-weight: 400;
-    transition: .5s ease;
-    text-shadow: 0px 0px .1rem var(--background-dark);
-} */
+.form_label{
+    position: absolute;
+    left: .5rem;
+    top: .5rem;
+
+    transition: .3s;
+    
+    color:var(--color-accent);
+}
+
+
+
+div.gender{
+    margin: 1rem auto;
+    color: var(--color-accent);    
+    padding: 0px 5rem;
+}
+
+input#gender{
+    width: 1rem;
+    padding: .5rem 1rem;
+    margin: auto .5rem;
+}
+
+input#submit{
+    display: block;
+    width: 10vw;
+    padding: .3rem;
+
+    border: 0px;
+    border-radius: .4rem;    
+
+    background-color: var(--color-secondary);
+    color: var(--background-light);
+}
+
+
+/* hover effect here */
+
+.form_input:hover{
+    cursor: pointer;
+}
+
+
+input#submit:hover{
+    box-shadow: 0px 0px 3rem var(--color-secondary);
+
+}
+
+
+/* focus effect here */
+
+.form_input:focus{
+    cursor: text;
+
+    width: 100%;
+    height: 100%;
+    padding: .4rem;
+    outline: 0px;
+
+    color: var(--color-secondary);
+    border: .1rem solid var(--color-secondary);
+    margin: .07rem;
+
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+
+.form_input:focus + .form_label{
+    top: -.6rem;
+    left: .8rem;
+    padding: 0px .1rem;
+    font-weight: 500;
+    font-size: var(--small-font-size);
+    z-index: 10;
+    color: var(--color-secondary);
+    background-color: var(--background-light);
+}
+
+.form_input:not(:placeholder-shown).form_input:not(:focus)+ .form_label{
+    top: -0.5rem;
+    left: 0.8rem;
+    padding: 0px .1rem;
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    z-index: 10;
+    color: var(--color-secondary);
+    background-color: var(--background-light);
+}
+
+
+input#submit:focus{
+    box-shadow: 0px 0px 0px;
+}

@@ -101,14 +101,6 @@ fieldset{
     box-shadow: 0px 0px 0px;
 }
 
-#backToHomePage{
-    padding: .3em;
-}
-
-#backToHomePage:hover{
-    box-shadow: 0px 
-}
-
 
 .signupContainer{
     text-align: center;
