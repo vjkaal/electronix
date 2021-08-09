@@ -122,8 +122,8 @@ fieldset:not(#main){
 }
 
 input#submit:hover{
-    transition: 1s ease;
-    box-shadow: 0px 0px 1rem blue;
+    transition: 500ms ease;
+    box-shadow: 0px 0px 1rem var(--color-secondary);
 }
 
 
