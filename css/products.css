@@ -1,0 +1,28 @@
+/* imports here */
+
+
+/* variables here */
+:root{
+    --color-primary: #ffe598;
+    --color-secondary: #68ca87;
+    --color-accent: #655eb0;
+    --background-light: #fbfaf7;
+    --background-dark: #2b2d42;
+    --background-dark-variant: #999;
+
+    --fontsize-small: .75rem;
+    --fontsize-large: 1.25rem;
+    --fontsize-heading: 2rem;
+}
+
+/* code here */
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-primary);
+}
+
+div.img img{
+    width: 15rem;
+}

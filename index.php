@@ -22,28 +22,22 @@
 
 
     <br>
-    <div>
-        <div class="slideshow">
-            <div class="imgCont">
-                <img src="img/1.png" alt="" id="img1">
-                <img src="img/2.jpg" alt="" id="img2">
-                <img src="img/3.jpg" alt="" id="img3">
-                <img src="img/4.jpg" alt="" id="img4">
-                <img src="img/5.jpg" alt="" id="img5">
-                <img src="img/6.gif" alt="" id="img6">
-                <img src="img/7.jpg" alt="" id="img7">
-                <img src="img/8.jpg" alt="" id="img8">
-                <img src="img/9.jpg" alt="" id="img9">
-                <!-- don't remove last image, else the 9th image is put out of loop -->
-                <img src="img/img.jpg" alt="" id="extra">
-            </div>
+    <div class="slideshow">
+        <div class="imgCont">
+            <img src="img/slideshow/1.png" alt="" id="img1">
+            <img src="img/slideshow/2.jpg" alt="" id="img2">
+            <img src="img/slideshow/3.jpg" alt="" id="img3">
+            <img src="img/slideshow/4.jpg" alt="" id="img4">
+            <img src="img/slideshow/5.jpg" alt="" id="img5">
+            <img src="img/slideshow/6.gif" alt="" id="img6">
+            <img src="img/slideshow/7.jpg" alt="" id="img7">
+            <img src="img/slideshow/8.jpg" alt="" id="img8">
+            <img src="img/slideshow/9.jpg" alt="" id="img9">
+            <!-- don't remove last image, else the 9th image is put out of loop -->
+            <img src="img/img.jpg" alt="" id="extra">
         </div>
-
-        <!-- <div id="theme">
-                <button onclick="changeTheme();">Theme</button>
-            </div> -->
-
     </div>
+
     <br>
 
 
@@ -52,7 +46,7 @@
 
             <section>
                 <div>
-                    <img class="sImg" src="img/tv.jpg" alt="">
+                    <img class="sImg" src="img/main_page/tv.jpg" alt="">
                 </div>
 
                 <div class="content">
@@ -61,84 +55,13 @@
                 </div>
 
             </section>
-        
-            <section>
-                
-                <div class="content">
-                    <h2>See Big Think Big</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deserunt, iusto eaque atque maiores nobis porro debitis, optio dolores ea voluptatum nemo consectetur dolorem similique.</p>
-                </div>
-                
-                <div>
-                    <img class="sImg" src="img/refrigerator.jpeg" alt="">
-                </div>
-            
-            </section>
-            
-            
-            <section>
-                
-                <div>
-                    <img class="sImg" src="img/air-cooler.jpeg" alt="">
-                </div>
-                
-                <div class="content">
-                    <h2>See Big Think Big</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deserunt, iusto eaque atque maiores nobis porro debitis, optio dolores ea voluptatum nemo consectetur dolorem similique.</p>
-                </div>    
 
-            </section>
-
-
-
-            <section>
-                
-                <div class="content">
-                    <h2>See Big Think Big</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deserunt, iusto eaque atque maiores nobis porro debitis, optio dolores ea voluptatum nemo consectetur dolorem similique.</p>
-                </div>
-
-                <div>
-                    <img class="sImg" src="img/ac3.jpg" alt="">
-                </div>
-
-            </section>
-
-
+            <hr style="width: 50vw;margin: auto;">
 
             <section>
 
                 <div>
-                    <img class="sImg" src="img/washing-machine.jpg" alt="">
-                </div>
-                
-                <div class="content">
-                    <h2>See Big Think Big</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deserunt, iusto eaque atque maiores nobis porro debitis, optio dolores ea voluptatum nemo consectetur dolorem similique.</p>
-                </div>
-
-            </section>
-
-
-            <section>
-                
-                <div class="content">
-                    <h2>See Big Think Big</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deserunt, iusto eaque atque maiores nobis porro debitis, optio dolores ea voluptatum nemo consectetur dolorem similique.</p>
-                </div>
-
-                <div>
-                    <img class="sImg" src="img/mobile.jpg" alt="">
-                </div>
-
-            </section>
-
-
-
-            <section>
-                
-                <div>
-                    <img class="sImg" src="img/oven.jpg" alt="">
+                    <img class="sImg" src="img/main_page/refrigerator.jpeg" alt="">
                 </div>
 
                 <div class="content">
@@ -148,21 +71,96 @@
 
             </section>
 
-
+            <hr style="width: 50vw;margin: auto;">
 
             <section>
 
+                <div>
+                    <img class="sImg" src="img/main_page/air-cooler.jpeg" alt="">
+                </div>
+
                 <div class="content">
                     <h2>See Big Think Big</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deserunt, iusto eaque atque maiores nobis porro debitis, optio dolores ea voluptatum nemo consectetur dolorem similique.</p>
                 </div>
 
+            </section>
+
+            <hr style="width: 50vw;margin: auto;">
+
+            <section>
+
                 <div>
-                    <img class="sImg" src="img/speaker2.jpg" alt="">
+                    <img class="sImg" src="img/main_page/ac3.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <h2>See Big Think Big</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deserunt, iusto eaque atque maiores nobis porro debitis, optio dolores ea voluptatum nemo consectetur dolorem similique.</p>
                 </div>
 
             </section>
-        
+
+            <hr style="width: 50vw;margin: auto;">
+
+            <section>
+
+                <div>
+                    <img class="sImg" src="img/main_page/washing-machine.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <h2>See Big Think Big</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deserunt, iusto eaque atque maiores nobis porro debitis, optio dolores ea voluptatum nemo consectetur dolorem similique.</p>
+                </div>
+
+            </section>
+
+            <hr style="width: 50vw;margin: auto;">
+
+            <section>
+
+                <div>
+                    <img class="sImg" src="img/main_page/mobile.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <h2>See Big Think Big</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deserunt, iusto eaque atque maiores nobis porro debitis, optio dolores ea voluptatum nemo consectetur dolorem similique.</p>
+                </div>
+
+            </section>
+
+            <hr style="width: 50vw;margin: auto;">
+
+            <section>
+
+                <div>
+                    <img class="sImg" src="img/main_page/oven.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <h2>See Big Think Big</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deserunt, iusto eaque atque maiores nobis porro debitis, optio dolores ea voluptatum nemo consectetur dolorem similique.</p>
+                </div>
+
+            </section>
+
+            <hr style="width: 50vw;margin: auto;">
+
+            <section>
+
+                <div>
+                    <img class="sImg" src="img/main_page/speaker2.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <h2>See Big Think Big</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deserunt, iusto eaque atque maiores nobis porro debitis, optio dolores ea voluptatum nemo consectetur dolorem similique.</p>
+                </div>
+
+            </section>
+
         </div>
 
     </section>

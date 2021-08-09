@@ -7,6 +7,7 @@
     --color-secondary: #68ca87;
     --color-accent: #655eb0;
     --background-light: #fbfaf7;
+    --background-light-variant: #e4d1b9;
     --background-dark: #2b2d42;
     --background-dark-variant: #999;
 
@@ -23,36 +24,67 @@ body{
     background-color: var(--color-primary);
 }
 
+.slideshow{    
+    margin-top: 10vw;
+}
+
 .slideshow img{
     border-radius: 1rem;    
     width: 90vw;
-    height: 80vh;
+    height: 40vw;
     transition: translateX(100%) 1s ease-in-out;
 }
 
 
-section:not(#main){
-    
-    background-color: var(--background-dark-variant);
-    color: var(--background-light);
-    display: flex;
-    /* flex-wrap: column nowrap; */
-}
-section:not(#main):nth-of-type(odd){
+/* assigning colors to the sections */
+
+section:not(#main){    
     background-color: var(--background-light);
     color: var(--background-dark);
+}
+
+section:not(#main):nth-of-type(odd){
+    background-color: var(--background-light-variant);
+    color: var(--background-dark);
+}
+
+
+/* designing up inside of section */
+
+/* section:not(#main) > div{
+    
+    border: 1px solid black;
+} */
+
+section:not(#main) > div:not(.content){
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.content > h2{
+    padding-top: 8vw;
 }
 
 
 .sImg{
     width: 30rem;
-    height: 20rem;
-    margin: 1rem;
+    height: 100%;
 }
 
-.content{
-    margin: 2rem;
+
+/* This is to set the image width if screen size is less then 30rem */
+
+@media screen and (max-width: 30rem){
+    .sImg{
+        width: 90%;
+    }
 }
+
+/* .content{
+    margin: 1rem;
+} */
 
 .content > h2{
     color: var(--color-accent);
@@ -69,19 +101,27 @@ section:not(#main):nth-of-type(odd){
 
 
 
-@media (max-width: 80rem) {
+@media (min-width: 80rem) {
 
     .slideshow{
         margin-top: 4rem;
-        height: 60vh;
+        height: 90vh;
     }
 
     .slideshow img{
-        height: 50vh;
+        height: 80vh;
     }
 
     button{
         background-color: red;
+    }
+
+    section:not(#main){
+        display: flex;
+    }
+
+    section:not(#main):nth-of-type(even) > div.content{
+        order: -1;
     }
 }
 

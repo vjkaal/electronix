@@ -18,7 +18,14 @@
     <body>
 
         <!-- header file -->
-        <?php include 'inc/header.php'; ?>
+        <?php
+            
+           include 'inc/header.php'; 
+            
+        ?>
+
+
+
 
 
         <?php
@@ -66,25 +73,37 @@
 
 
         <form id="loginForm" action="login.php" method="post">
-            <fieldset>
+            <fieldset id="main">
 
                 <div class="inputContainer">
 
                     <div class="emailContainer">
-                        <!-- <legend>Email:</legend> -->
-                        <center><input type="email" id="email" name="email" placeholder="Enter email: "></center>
+                        <fieldset>
+
+                            <input type="email" class="form_input" name="email" placeholder="">
+                            <label for="email" class="form_label">Enter email</label>
+
+                        </fieldset>
                     </div>
                     <br>
                     <div class="passContainer">
-                        <!-- <legend>Password:</legend> -->
-                        <center><input type="password" id="pass" name="pass" placeholder="Enter password: "></center>
+                        <fieldset>
+
+                            <input type="password" class="form_input" name="pass" placeholder="">
+                            <label for="pass" class="form_label">Enter password</label>
+
+                        </fieldset>
                     </div>
 
                 </div>
                 <br>
                 <div class="submitContainer">
-                    <input type="hidden" name="given" value="1">
-                    <center><input type="submit" id="submit" name="submit" value="Login"></center>
+                    <fieldset>
+
+                        <input type="hidden" name="given" value="1">
+                        <center><input type="submit" id="submit" name="submit" value="Login"></center>
+
+                    </fieldset>
                 </div>
                 <br>
 
@@ -94,12 +113,9 @@
 
 
         <div class="signupContainer">
-            New Customer? &nbsp;&nbsp; <a href="signup.php"> <u>Create an Account</u> </a>
+            New Customer? &nbsp;&nbsp; <a href="signup.php"> Create an Account</a>
         </div>
 
-
-        <!-- footer file -->
-        <!-- <?php include 'inc/footer.php'; ?> -->
 
 
     </body>
