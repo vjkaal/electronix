@@ -14,7 +14,17 @@
     --small-font-size: .75rem;
 }
 
-/* code here */
+/* 
+    =========
+    code here
+    =========
+    
+*/
+
+
+/* 
+    globals here
+*/
 
 body{
     width: 100%;
@@ -23,6 +33,10 @@ body{
     color: var(--background-dark);
 }
 
+
+/*
+    layout here
+*/
 
 form#loginForm{
     padding: 20vw 1vw;
@@ -45,11 +59,14 @@ fieldset#main{
 }
 
 .inputContainer, .submitContainer{
-    width: 50vw;
+    width: max(50vw, 300px);
     margin: 5vw 0px;
     padding: 3vw 0px;
 }
 
+.submitContainer{
+    margin-top: 2em;
+}
 
 fieldset:not(#main){
     position: relative;
@@ -57,6 +74,11 @@ fieldset:not(#main){
     border: 0px;
     border-radius: .4rem;
 }
+
+
+/*
+    components here
+*/
 
 .form_input{
     width: 100%;
@@ -82,11 +104,6 @@ fieldset:not(#main){
     
     transition: .3s;
     color: var(--color-accent);
-}
-
-
-.submitContainer{
-    margin-top: 2em;
 }
 
 #submit{
@@ -115,7 +132,11 @@ fieldset:not(#main){
 
 
 
-/* hover effect */
+/*
+
+    hover effect
+    
+*/
 
 .form_input:hover{
     cursor: pointer;
@@ -136,7 +157,11 @@ input#submit:hover{
 
 
 
-/* focus effect here */
+/*
+
+    focus effect here
+
+*/
 
 .form_input:focus{
     cursor: text;
@@ -182,6 +207,12 @@ input#submit:focus{
     box-shadow: 0px 0px 0px;
 }
 
+
+/* 
+
+    media query for large screens
+
+*/
 
 @media screen and (min-width: 50rem){
     *{
