@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title></title>
+
+    <link rel="stylesheet" href="css/header_footer.css">
     <link rel="stylesheet" href="css/signup.css">
 </head>
 
@@ -53,7 +55,7 @@
 
                     <div class="email">
                         <fieldset>
-                        
+
                             <input type="email" name="email" class="form_input" placeholder="" required>
                             <label for="" class="form_label">Enter email </label>
 
@@ -64,10 +66,18 @@
 
 
                     <div class="gender">
-                        
-                        <input type="radio" id="gender" class="form_input" name="gender" value="male" required>Male
-                        <input type="radio" id="gender" class="form_input" name="gender" value="female" required>Female
-                        <input type="radio" id="gender" class="form_input" name="gender" value="female" required>Prefer not say
+
+                        <div>
+                            <input type="radio" id="gender" class="form_input" name="gender" value="male" required>Male
+                        </div>
+
+                        <div>
+                            <input type="radio" id="gender" class="form_input" name="gender" value="female" required>Female
+                        </div>
+
+                        <div>
+                            <input type="radio" id="gender" class="form_input" name="gender" value="female" required>Prefer not say
+                        </div>
                     </div>
 
                 </div>
@@ -85,7 +95,7 @@
 
                     <div>
                         <fieldset>
-                            
+
                             <input type="password" name="pass" class="form_input" placeholder="" value="" required>
                             <label for="" class="form_label">Enter a password </label>
 
@@ -117,30 +127,5 @@
     </form>
 
 </body>
-
-
-<script>
-    // const x = document.querySelectorAll("input");
-    // const y = document.querySelectorAll("legend");
-
-    // for(let i=0;i<x;i++)
-    // {
-    //     let str;
-    //     x[i].addEventListener("focus", function() {
-    //         str = this.placeholder;
-    //         console.log("called");
-    //         x[i].placeholder = "";
-    //         y[i].style.display = "inline";
-    //     });
-
-    //     x[i].addEventListener("blur", function() {
-    //         console.log("called_2");
-    //         x[i].placeholder = str;
-    //         y[i].style.display = "none";
-    //     });
-    // }
-
-</script>
-
 
 </html>

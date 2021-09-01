@@ -7,7 +7,7 @@
     --color-secondary: #68ca87;
     --color-accent: #655eb0;
     --background-light: #fbfaf7;
-    --background-light-variant: #e4d1b9;
+    --background-light-variant: #dfdddb;
     --background-dark: #2b2d42;
     --background-dark-variant: #999;
 
@@ -22,18 +22,42 @@ body{
     width: 100%;
     height: 100%;
     background-color: var(--color-primary);
+
+    margin-top: calc(10vw + 40px);
 }
 
-.slideshow{    
-    margin-top: 10vw;
+
+/*
+
+
+    slideshow here
+
+
+*/
+
+
+.imgCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.slideshow img{
-    border-radius: 1rem;    
+.imgCont img{
     width: 90vw;
     height: 40vw;
-    transition: translateX(100%) 1s ease-in-out;
+
+    border: 1px solid var(--background-dark);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 1rem var(--background-dark);    
 }
+
+/* removing slideshow for mobile screen, looked terrible */
+@media screen and (max-width: 600px) {
+    .slideshow{
+        display: none;
+    }
+}
+
 
 
 /* assigning colors to the sections */
@@ -51,40 +75,26 @@ section:not(#main):nth-of-type(odd){
 
 /* designing up inside of section */
 
-/* section:not(#main) > div{
-    
-    border: 1px solid black;
-} */
-
-section:not(#main) > div:not(.content){
+div.sImg{
     width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-div.content > h2{
-    padding-top: 8vw;
-}
 
 
-.sImg{
-    width: 30rem;
-    height: 100%;
-}
+/* This is to set the image width if screen size is less then 60rem(tab) */
 
-
-/* This is to set the image width if screen size is less then 30rem */
-
-@media screen and (max-width: 30rem){
-    .sImg{
+@media screen and (max-width: 60rem){
+    div.sImg > img{
         width: 90%;
     }
 }
 
-/* .content{
-    margin: 1rem;
-} */
+
+
 
 .content > h2{
     color: var(--color-accent);
@@ -94,17 +104,26 @@ div.content > h2{
 }
 
 .content > p{
-    padding: 4rem;
+    padding: 1rem 4rem;
+    padding-bottom: 2rem;
     text-align: center;
     font-size: var(--fontsize-large);
 }
 
 
 
-@media (min-width: 80rem) {
+/*
+
+
+    media query for large screens
+
+
+*/
+
+@media screen and (min-width: 60rem) {
 
     .slideshow{
-        margin-top: 4rem;
+        /* margin-top: 4rem; */
         height: 90vh;
     }
 
@@ -118,19 +137,34 @@ div.content > h2{
 
     section:not(#main){
         display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
-    section:not(#main):nth-of-type(even) > div.content{
-        order: -1;
+    section:not(#main):nth-of-type(even) > div.sImg{
+        order: 1;
+    }
+
+    div.sImg{
+        width: 100%;
+    }
+
+    div.sImg > img{
+        width: 100%;
+    }
+
+    section:not(#main) > div.content{
+        margin: 0px auto;
+        height:auto;
+        padding-top: 1rem;
+    }
+
+    div.content > h2{
+        padding-top: 0px;
     }
 }
 
 
-.imgCont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 footer{

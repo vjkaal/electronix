@@ -6,11 +6,13 @@
 :root{
     --color-primary: #ffe598;
     --color-secondary: #68ca87;
-    --color-accent: #655eb0;
+    --color-accent: dodgerblue;
     --background-light: #fbfaf7;
     --background-dark: #2b2d42;
 
 
+    --large-font-size: 1.25rem;
+    --medium-font-size: 1.15rem;
     --small-font-size: .75rem;
 }
 
@@ -31,6 +33,8 @@ body{
     height: 100%;
     background-color: var(--color-primary);
     color: var(--background-dark);
+
+    margin-top: calc(5vw + 40px);
 }
 
 
@@ -39,12 +43,12 @@ body{
 */
 
 form#loginForm{
-    padding: 20vw 1vw;
+    padding: 5em 1vw;
 }
 
 
 fieldset#main{
-    margin: 1rem 2vw;
+    margin: .1rem 2vw;
     padding: 1em;
     background-color: var(--background-light);
     
@@ -55,17 +59,18 @@ fieldset#main{
     
     border: 0px;
     border-radius: 2rem;
-    box-shadow: 0px 0px 2rem rgba(92,99,105,.4);
+    box-shadow: 0px 0px 2rem var(--background-dark);
 }
 
 .inputContainer, .submitContainer{
     width: max(50vw, 300px);
     margin: 5vw 0px;
     padding: 3vw 0px;
+    z-index: 0;
 }
 
 .submitContainer{
-    margin-top: 2em;
+    margin-top: 4vw;
 }
 
 fieldset:not(#main){
@@ -85,12 +90,10 @@ fieldset:not(#main){
     height: 100%;
     top: 0;
     left: 0;
-    padding: .4rem;
+    padding: .2rem;
 
-    z-index: 1;
-    font-size: 1.1rem;
+    /* z-index: 1; */
     background-color: var(--background-light);
-    color: var(--color-secondary);
 
     border: 1px solid var(--background-dark);
     border-radius: .4rem;
@@ -98,9 +101,9 @@ fieldset:not(#main){
 
 .form_label{
     position: absolute;
-    left: .5rem;
-    top: .8rem;
-    font-size: 5vw;
+    left: 1vw;
+    top: 1vw;
+    font-size: var(--medium-font-size);
     
     transition: .3s;
     color: var(--color-accent);
@@ -108,7 +111,7 @@ fieldset:not(#main){
 
 #submit{
     display: block;
-    width: 15vw;
+    width: 30vw;
     padding: .3rem;
 
     border: 0px;
@@ -139,7 +142,7 @@ fieldset:not(#main){
 */
 
 .form_input:hover{
-    cursor: pointer;
+    cursor: text;
 }
 
 input#submit:hover{
@@ -165,18 +168,17 @@ input#submit:hover{
 
 .form_input:focus{
     cursor: text;
+    font-size: var(--medium-font-size);
 
     width: 100%;
     height: 100%;
-    padding: .4rem;
+    padding: .13rem .4rem;
     outline: 0px;
 
     
-    color: var(--color-secondary);
-    border: .1rem solid var(--color-secondary);
-    margin: .07rem;
-    font-size: 1.1rem;
-    font-weight: 800;
+    /* color: var(--color-secondary); */
+    border: .15rem solid var(--color-accent);
+    margin: .02rem;
 }
 
 
@@ -186,8 +188,8 @@ input#submit:hover{
     padding: 0px .1rem;
     font-size: var(--smal-font-size);
     font-weight: 500;
-    z-index: 10;
-    color: var(--color-secondary);
+    /* z-index: 10; */
+    color: var(--color-accent);
     background-color: var(--background-light);
 }
 
@@ -197,8 +199,7 @@ input#submit:hover{
     padding: 0px .1rem;
     font-size: var(--small-font-size);
     font-weight: 500;
-    z-index: 10;
-    color: var(--color-secondary);
+    /* z-index: 10; */
     background-color: var(--background-light);
 }
 
@@ -208,19 +209,24 @@ input#submit:focus{
 }
 
 
+
+
+
 /* 
 
     media query for large screens
 
 */
 
-@media screen and (min-width: 50rem){
+@media screen and (min-width: 60rem){
     *{
         margin: 0;
     }
 
     form#loginForm{
-        padding: 10vw;
+        padding: 0px 10vw;
+        padding-top: 10rem;
+        padding-bottom: 5rem;
     }
 
     .inputContainer, .submitContainer{
@@ -230,19 +236,35 @@ input#submit:focus{
     }
 
     .form_input{
-        font-size: 1.2rem;
+        font-size: var(--medium-font-size);
         font-weight: 800;
     }
 
     .form_label{
-        font-size: 1.2rem;
-        top: 1.1rem;
+        font-size: var(--medium-font-size);
+        top: .7rem;
         left: 1rem;
     }
 
-
     .form_input:focus{
-        font-size: 1.2rem;
+        font-size: var(--medium-font-size);
+        padding: unset;
+        padding: .10rem .4rem;
+    }
+
+    .form_input:focus + .font_label{
+        font-size: var(--small-font-size);
         font-weight: 800;
+    }
+
+
+    div.submitContainer{
+        padding: unset;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    input#submit{
+        width: 10em;
     }
 }

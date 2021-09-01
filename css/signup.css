@@ -6,7 +6,7 @@
 :root{
     --color-primary: #ffe598;
     --color-secondary: #68ca87;
-    --color-accent: #655eb0;
+    --color-accent: dodgerblue;
     --background-light: #fbfaf7;
     --background-dark: #282d42;
 
@@ -16,26 +16,24 @@
 
 /* code here */
 
-*, ::before, ::after{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-
 
 body{
     width: 100%;
     height: 100%;
     background-color: var(--color-primary);
+
+
+    margin-top: calc(10vw + 40px);
 }
 
 form{
+    margin-top: 2vw;
     padding: 1em;
 }
 
 fieldset#main{
-    margin: 1rem 20rem;
-    padding: 1em;
+    /* margin: 1rem 20rem; */
+    padding: 5vw 10vw;
     height: 70vh;
     background-color: var(--background-light);
     
@@ -49,17 +47,23 @@ fieldset#main{
     box-shadow: 0px 0px 2rem rgba(92,99,105,.4);
 }
 
+
+div.inputContainer{
+    width: 100%;
+}
+
+
 fieldset:not(#main){
     position: relative;
     margin-bottom: 1rem;
-    width: 30vw;
+    width: 100%;
     border-radius: .4rem;
     border: 0px;
 }
 
 
 .form_input{
-    width: 100%;
+    width: inherit;
     height: 100%;
     top: 0;
     left: 0;
@@ -68,8 +72,6 @@ fieldset:not(#main){
     border: 1px solid var(--background-dark);
     border-radius: .4rem;
 
-    z-index: 1;
-    font-size: 1.1rem;
     color: var(--color-secondary);
     background-color: var(--background-light);
 }
@@ -87,9 +89,9 @@ fieldset:not(#main){
 
 
 div.gender{
-    margin: 1rem auto;
-    color: var(--color-accent);    
-    padding: 0px 5rem;
+    margin: 5vw auto;
+    color: var(--background-dark);
+    padding: 0px 4vw;
 }
 
 input#gender{
@@ -98,9 +100,14 @@ input#gender{
     margin: auto .5rem;
 }
 
+
+div.submit{
+    display: flex;
+}
+
 input#submit{
     display: block;
-    width: 10vw;
+    width: 40vw;
     padding: .3rem;
 
     border: 0px;
@@ -131,16 +138,10 @@ input#submit:hover{
 
     width: 100%;
     height: 100%;
-    padding: .4rem;
     outline: 0px;
 
     color: var(--color-secondary);
     border: .1rem solid var(--color-secondary);
-    margin: .07rem;
-
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 800;
 }
 
 
@@ -169,4 +170,49 @@ input#submit:hover{
 
 input#submit:focus{
     box-shadow: 0px 0px 0px;
+}
+
+
+@media  screen and (min-width: 60rem) {
+    
+    form{
+        margin: auto 4rem;
+    }
+
+    fieldset#main{
+        padding: unset;
+        padding: 0px 10em;
+
+        margin: unset;
+        margin: auto 5em;
+    }
+
+    .form_input{
+        width: 90%;
+    }
+
+    div.gender{
+        padding: unset;
+        padding: 1rem 0px;
+
+        margin: unset;
+        margin: 2rem auto;
+
+        display: flex;
+        justify-content: flex-start;
+    }
+
+
+    div.submit{
+        width: 100%;
+        
+        padding-right: 5em;
+        justify-content: flex-end;
+    }
+
+
+    input#submit{
+        right: 0;
+        width: 10em;
+    }
 }

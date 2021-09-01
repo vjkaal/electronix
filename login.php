@@ -3,13 +3,16 @@
     <head>
         <meta charset="utf-8">
         <title>LOGIN</title>
+        
+        
+        <link rel="stylesheet" href="css/header_footer.css">
         <link rel="stylesheet" href="css/login.css">
 
         <script>
             function hideAll() {
                 document.addEventListener("DOMContentLoaded", function(){
                     document.getElementById("loginForm").style.display="none";
-                    document.getElementById("signupContainer").style.display="none";
+                    document.querySelector(".signupContainer").style.display="none";
                 });
             }
         </script>
@@ -46,7 +49,10 @@
             if(strlen($_POST["email"]) == 0 && strlen($_POST["pass"]) == 0)
             {
                 echo '<p ';
-                echo 'style="background: red; color: white; text-align: center; padding: .5rem 0px;"';
+                echo 'style="background: red; color: white;';
+                echo 'position: absolute; text-align: center;';
+                echo 'width: 100%;';
+                echo 'padding: .5rem 0px;margin-top: 7.5rem;"';
                 echo '>Please enter Correct input</p>';
                 $inputYes = 0;
             }
@@ -61,7 +67,9 @@
                     echo '</script>';
                     echo '<form action="index.php" method="post">';
                     echo '<center><input type="submit" ';
-                    echo 'style="border: 0px; border-radius: .5rem; padding: 1rem;margin: 2rem; font-weight: 600; background: #fbfaf7; box-shadow: 0px 0px 1rem #2b2d42;"';
+                    echo 'style="border: 0px; border-radius: .5rem;';
+                    echo 'padding: 1rem;margin-top: 10rem;';
+                    echo 'font-weight: 600; background: #fbfaf7;"';
                     echo 'name="submit" value="Back to Home Page"></center>';
                     echo '</form>';
                 }
@@ -80,7 +88,7 @@
                     <div class="emailContainer">
                         <fieldset>
 
-                            <input type="email" class="form_input" name="email" placeholder="">
+                            <input type="email" class="form_input" name="email" placeholder="" required>
                             <label for="email" class="form_label">Enter email</label>
 
                         </fieldset>
@@ -89,7 +97,7 @@
                     <div class="passContainer">
                         <fieldset>
 
-                            <input type="password" class="form_input" name="pass" placeholder="">
+                            <input type="password" class="form_input" name="pass" placeholder="" required>
                             <label for="pass" class="form_label">Enter password</label>
 
                         </fieldset>

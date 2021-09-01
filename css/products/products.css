@@ -1,0 +1,210 @@
+/* imports here */
+
+/* variables here */
+:root{
+    --color-primary: #ffe598;
+    --color-secondary: #68ca87;
+    --color-accent: #655eb0;
+    --background-light: #fbfaf7;
+    --background-light-variant: #f1faf7;
+    --background-dark: #2b2d42;
+    --background-dark-variant: #999;
+
+    --fontsize-small: .75rem;
+    --fontsize-medium: 1.15rem;
+    --fontsize-large: 1.25rem;
+}
+
+/* code here */
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-primary);
+    margin-top: calc(10vw + 40px);
+}
+
+
+div.mainContent{
+    width: 100vw;
+    height: 100%;
+}
+
+@media screen and (min-width: 600px ) and ( max-width: 60rem){
+
+    div.mainContent{
+        padding-top: 2vw;
+    }
+}
+
+nav.topbar{
+    background-color: var(--color-secondary);
+}
+
+.topChild, .btmChild{
+    
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    text-align: center;
+    height: fit-content;
+    padding: .2em 0px;
+}
+
+.topBtn, .btmBtn{
+    border: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: var(--background-light);
+    font-size: var(--fontsize-medium);
+
+    cursor: pointer;
+}
+
+.btmBtn{
+    color: var(--color-accent);
+}
+
+
+div.one, div.two, div.three{
+    background-color: var(--background-light);
+}
+
+
+
+div.active{
+    color: var(--background-dark);
+    font-weight: bold;
+}
+
+/*
+
+
+    designing the item card
+
+
+*/
+
+div.individual{
+    margin: 2em 1em;
+    border-radius: 1em;
+    color: var(--background-dark);
+    background-color: var(--background-light);
+
+    box-shadow: 0px 0px .5em var(--background-dark);
+}
+
+div.individual > div{
+    display: flex;
+    justify-content: center;
+}
+
+div.individual > div > *{
+    margin: 2vw auto;
+}
+
+
+div.contentHeading{
+    padding: 1vw 2vw;
+    font-size: var(--fontsize-large);
+    text-align: center;
+}
+
+div.img > img{
+    width: 50vw;
+}
+
+div.price{
+    font-size: var(--fontsize-medium);
+}
+
+
+div.btn > button{
+    font-size: var(--fontsize-large);
+    font-weight: bold;
+    
+    padding: 1vw 5vw;
+
+    border: 0px;
+    border-radius: 1em;
+
+    color: var(--background-light);
+    background-color: var(--color-secondary);
+}
+
+
+@media screen and (min-width: 60rem){
+
+
+    div.mainContent{
+        width:auto;
+        
+        display: flex;
+    }
+
+    div.navContainer{
+        all:unset;
+        width: 20%;
+        height: 100%;
+    }
+
+    nav.topbar, nav.bottombar{
+        padding: unset;
+        padding: 1em 0px;
+        background-color: var(--background-light);
+    }
+   
+    nav.topbar{
+        width: 100%;
+        border-bottom: 2px solid black;
+    }
+
+    .topBtn, .btmBtn{
+        color: var(--color-accent);
+    }
+
+
+    div.display{
+        all: unset;
+        width: 80%;
+
+        background-color: var(--background-light-variant);
+
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+    }
+
+
+
+    div.individual{
+        all: unset;
+        
+        display: block;
+        margin: 1em auto;
+        width: 40%;
+        height: max-content;
+
+        color: var(--background-dark);
+        background-color: var(--background-light);
+
+        border-radius: 1em;
+    }
+
+
+    div.contentHeading{
+        text-align: center;
+    }
+
+    div.img > img{
+        width: 20em;
+    }
+
+    div.btn > button{
+        font-size: unset;
+        padding: unset;
+        padding: .5em 3em;
+    }
+
+}

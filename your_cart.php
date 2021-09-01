@@ -4,7 +4,11 @@
 <head>
     <meta charset="utf-8">
     <title>YOUR CART</title>
+
+    <link rel="stylesheet" href="css/header_footer.css">
     <link rel="stylesheet" href="css/your_cart.css">
+
+
 </head>
 
 <body>
@@ -15,7 +19,7 @@
     <script>
 
         function redirect(){
-            window.location.href = "products.php";
+            window.location.href = "index.php";
         }
 
     </script>
